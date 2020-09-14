@@ -13,7 +13,7 @@ public class ClientWebservice {
     public static void main(String[] args) {
 
         CloseableHttpClient httpclient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet(sURL + "/checkTexts?text=синхрафазатрон&text=в+дубне");
+        HttpGet httpGet = new HttpGet(sURL + "/checkText?text=превет+как+дила?");
 
         try {
             CloseableHttpResponse response1 = httpclient.execute(httpGet);
